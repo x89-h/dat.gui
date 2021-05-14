@@ -2416,7 +2416,7 @@ function addSaveMenu(gui) {
     gui.save();
   });
   dom.bind(button2, 'click', function () {
-    var presetName = prompt('Enter a new preset name.');
+    var presetName = "Preset "+Math.random().toString(36).substring(7);
     if (presetName) {
       gui.saveAs(presetName);
     }
