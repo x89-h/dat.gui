@@ -2333,7 +2333,7 @@ function _add(gui, object, property, params) {
   return controller;
 }
 function getLocalStorageHash(gui, key) {
-  return document.location.href + '.' + key;
+  return document.location.host + '.' + key;
 }
 function addPresetOption(gui, name, setSelected) {
   var opt = document.createElement('option');
