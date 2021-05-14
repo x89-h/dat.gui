@@ -1179,7 +1179,7 @@ function add(gui, object, property, params) {
 
 function getLocalStorageHash(gui, key) {
   // TODO how does this deal with multiple GUI's?
-  return document.location.href + '.' + key;
+  return document.location.host + '.' + key;
 }
 
 function addPresetOption(gui, name, setSelected) {
